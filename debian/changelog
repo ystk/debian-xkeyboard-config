@@ -1,3 +1,43 @@
+xkeyboard-config (2.12-1) unstable; urgency=medium
+
+  * New upstream release
+    + revert Russian layout change from 2.11 (closes: #748521)
+    + revert it/fr/nl numeric keypad separator change (closes: #748734, #749112)
+  * Fix right control key on fr(oss) layout to behave like control again
+    (closes: #733757)
+
+ -- Julien Cristau <jcristau@debian.org>  Fri, 06 Jun 2014 17:44:52 +0200
+
+xkeyboard-config (2.11-1) unstable; urgency=medium
+
+  [ Lior Kaplan ]
+  * New upstream release
+    + altwin(ctrl_alt_win): Map "win" to Ctrl keys (closes: #678553)
+    + use the modern language name Bangla instead of Bengali (closes: #731274)
+    + implemented the new Israeli Standard SI1452 for the il basic layout
+      (closes: #530820)
+
+  [ Sven Joachim ]
+  * Mark xkb-data as "Multi-Arch: foreign" (Closes: #677884).
+
+  [ Julien Cristau ]
+  * Fix grab:debug reference in the xml file.
+
+ -- Julien Cristau <jcristau@debian.org>  Tue, 13 May 2014 00:09:58 +0200
+
+xkeyboard-config (2.10.1-1) unstable; urgency=low
+
+  [ Dmitry Shachnev ]
+  * New upstream release (closes: #718730).
+  * Refresh revert-goodmap-badmap-for-apple.diff.
+  * Drop preserve-shift.diff, applied upstream.
+  * Update debian/watch for new tarballs location (closes: #727812).
+  * Disable autopoint, it causes build failure and we use intltoolize
+    instead.
+  * Bump Standards-Version to 3.9.5, no changes needed.
+
+ -- Julien Cristau <jcristau@debian.org>  Sun, 22 Dec 2013 16:37:56 +0100
+
 xkeyboard-config (2.5.1-3) unstable; urgency=low
 
   * Cherry-picks from upstream:
